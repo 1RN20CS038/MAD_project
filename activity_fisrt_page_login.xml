@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FisrtPageLogin">
+
+
+    <Spinner
+        android:id="@+id/veh_typ"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="516dp"
+        android:entries="@array/vehicle_type" />
+
+    <ImageView
+    android:id="@+id/img9"
+    android:layout_width="334dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginEnd="218dp"
+    android:layout_marginBottom="574dp"
+    android:rotation="-225"
+    app:srcCompat="@drawable/optional" />
+
+
+    <Button
+        android:id="@+id/clback"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="26dp"
+        android:text="BACK"
+        app:backgroundTint="#9C27B0" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="256dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="657dp"
+        android:text="LOGOUT"
+        app:backgroundTint="#9C27B0" />
+
+    <Button
+        android:id="@+id/data_submit"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="26dp"
+        android:text="SUBMIT"
+        app:backgroundTint="#9C27B0" />
+
+    <TextView
+        android:id="@+id/vehType"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="554dp"
+        android:text="Vehicle Type:"
+        android:textColor="#0B0707"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fuelT"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="473dp"
+        android:text="Fuel Type"
+        android:textColor="#0B0707"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/fuel_typ"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="433dp"
+        android:entries="@array/fuel_type" />
+
+    <TextView
+        android:id="@+id/req"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="396dp"
+        android:text="Requirement:"
+        android:textColor="#0B0707"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/req_typ"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="354dp"
+        android:entries="@array/requirement" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="service required within(time/days)"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="151dp"
+        android:text="Get Location" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="311dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="90dp"
+        android:text="Location will appear here" />
+
+    <TextView
+        android:id="@+id/veh_no"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="198dp"
+        android:layout_marginBottom="313dp"
+        android:text="Vehicle No:"
+        android:textColor="#0B0707"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/v_num"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>
